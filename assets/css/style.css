@@ -1,3 +1,8 @@
+/* google fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+/* css variables */
+
 :root {
     --primary-color: #4CAF50;
     --secondary-color: #f44336;
