@@ -154,6 +154,28 @@ h3 {
     transition: transform 150ms;
 }
 
+/* HUD */
+#hud {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.hud-prefix {
+    text-align: center;
+}
+
+.hud-main-text {
+  text-align: center;
+
+.correct {
+    background-color: #28a745;
+}
+
+.incorrect {
+    background-color: #dc3545;
+}
+
 
 /* results page */
 
