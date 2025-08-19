@@ -39,7 +39,7 @@ See [`USER_STORIES.md`](./USER_STORIES.md) for detailed user stories covering:
 ## Pallette
 ![Pallette](assets/Images/Pallette.png)
 
-#6C63FF #36344a #2e2c3e #36344a #bb485f #a33d52 #827bff
+<!-- #6C63FF #36344a #2e2c3e #36344a #bb485f #a33d52 #827bff -->
 
 ## Font
 
