@@ -43,7 +43,7 @@ let questions = [
     { question: "Where was the earliest documented case of the Spanish flu?", choice1: "USA", choice2: "Spain", choice3: "Mexico", choice4: "China", answer: "USA" },
     { question: "Which of the following languages is NOT driven from Latin?", choice1: "French", choice2: "Portuguese", choice3: "English", choice4: "German", answer: "English" },
     { question: "Arnold Schwarzenegger was married to a member of what famous US political family?", choice1: "The Kennedys", choice2: "The Bushes", choice3: "The Rockefellers", choice4: "The Clintons", answer: "The Kennedys" },
-// remove to set question category ];
+// remove to set question category and remove "," from the end of the last question in the array above];
 
 // Sport Questions
 // remove to set question category let sportQuestions = [
@@ -77,8 +77,9 @@ let questions = [
     { question: "What is the nickname of the New Zealand rugby team?", choice1: "Wallabies", choice2: "All Blacks", choice3: "Springboks", choice4: "Pumas", answer: "All Blacks" },
     { question: "Who won the men's singles at Wimbledon in 2019?", choice1: "Roger Federer", choice2: "Novak Djokovic", choice3: "Rafael Nadal", choice4: "Andy Murray", answer: "Novak Djokovic" },
     { question: "Which country hosted the 2016 Summer Olympics?", choice1: "China", choice2: "Brazil", choice3: "UK", choice4: "Russia", answer: "Brazil" },
-    { question: "Who is the only athlete to play in both a Super Bowl and a World Series?", choice1: "Bo Jackson", choice2: "Deion Sanders", choice3: "Michael Jordan", choice4: "Tim Tebow", answer: "Deion Sanders" }
-// remove to set question category ];
+    { question: "Who is the only athlete to play in both a Super Bowl and a World Series?", choice1: "Bo Jackson", choice2: "Deion Sanders", choice3: "Michael Jordan", choice4: "Tim Tebow", answer: "Deion Sanders" },
+// remove to set question category and remove "," from the end of the last question in the array above 
+// ];
 
 // Geography Questions
 // remove to set question category let geographyQuestions = [
@@ -112,7 +113,8 @@ let questions = [
     { question: "What is the capital of Argentina?", choice1: "Buenos Aires", choice2: "Cordoba", choice3: "Rosario", choice4: "Mendoza", answer: "Buenos Aires" },
     { question: "Which country is home to the city of Marrakech?", choice1: "Morocco", choice2: "Egypt", choice3: "Tunisia", choice4: "Algeria", answer: "Morocco" },
     { question: "What is the capital of Norway?", choice1: "Oslo", choice2: "Bergen", choice3: "Trondheim", choice4: "Stavanger", answer: "Oslo" },
-// remove to set question category ];
+// remove to set question category and remove "," from the end of the last question in the array above 
+// ];
 
 // Film and TV Questions
 // remove to set question category let filmAndTvQuestions = [
@@ -145,7 +147,8 @@ let questions = [
     { question: "Who directed 'The Lord of the Rings' trilogy?", choice1: "Peter Jackson", choice2: "Steven Spielberg", choice3: "James Cameron", choice4: "George Lucas", answer: "Peter Jackson" },
     { question: "Which movie features a character named Tony Stark?", choice1: "Iron Man", choice2: "Spider-Man", choice3: "Thor", choice4: "Captain America", answer: "Iron Man" },
     { question: "Who played the main character in 'Pirates of the Caribbean'?", choice1: "Orlando Bloom", choice2: "Johnny Depp", choice3: "Geoffrey Rush", choice4: "Keira Knightley", answer: "Johnny Depp" },
-//remove to set question category ];
+//remove to set question category and remove "," from the end of the last question in the array above 
+// ];
 
 // Music Questions
 // remove to set question category let musicQuestions = [
@@ -196,8 +199,8 @@ startGame = () => {
 
 getNewQuestion = () => {
     if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
-        //go to the end page
-        return window.location.assign("end.html");
+        //go to the results page
+        return window.location.assign("results.html");
     }
     questionCounter++;
     const questionIndex = Math.floor(Math.random() * availableQuestions.length);
