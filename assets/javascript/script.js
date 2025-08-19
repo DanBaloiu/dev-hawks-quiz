@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+const questionCounterCount = document.getElementById("questionCounter");
+const scoreCount = document.getElementById("score");
+=======
 // Quiz Question Elements
 const question = document.getElementById("question");
 const choices = Array.from(document.getElementsByClassName("choice-text"));
@@ -235,3 +239,4 @@ choices.forEach(choice => {
 });
 
 startGame() 
+>>>>>>> main
