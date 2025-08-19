@@ -157,12 +157,14 @@ h3 {
 /* HUD */
 #hud {
     display: flex;
-    justify-content: space-around;
-    
+    justify-content: space-between;
+
 }
+ 
 
 .hud-prefix {
-    text-align: center;
+  text-align: center;
+  font-size: 2rem;
 }
 
 .hud-main-text {
