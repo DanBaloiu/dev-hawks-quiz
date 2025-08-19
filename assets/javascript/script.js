@@ -221,13 +221,24 @@ choices.forEach(choice => {
         acceptingAnswers = false;
         const selectedChoice = e.target;
         const selectedAnswer = selectedChoice.dataset["number"];
-
+        // check if the correct answer was selected
         const classToApply = selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";
-
         selectedChoice.parentElement.classList.add(classToApply);
 
+        // Always show the correct answer
+        choices.forEach(choice => {
+            if (choice.dataset["number"] == currentQuestion.answer) {
+                choice.parentElement.classList.add("correct");
+            }
+        });
+
+        // Set timeout to remove classes and get new question
         setTimeout(() => {
             selectedChoice.parentElement.classList.remove(classToApply);
+            // Remove 'correct' class from all choices
+            choices.forEach(choice => {
+                choice.parentElement.classList.remove("correct");
+            });
             getNewQuestion();
         }, 1000)
         
