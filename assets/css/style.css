@@ -87,6 +87,7 @@ h3 {
     align-items: center;
     max-width: 80rem;
     margin: 0 auto;
+    padding: 2rem;
 }
 
 .container>* {
@@ -179,7 +180,7 @@ h3 {
 }
 
 #results input {
-     margin-bottom: 1rem;
+  margin-bottom: 1rem;
   width: 20rem;
   padding: 1.5rem;
   font-size: 1.8rem;
