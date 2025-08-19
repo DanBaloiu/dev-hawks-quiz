@@ -11,8 +11,7 @@
     --secondary-font-family: 'Nunito Sans', sans-serif;
     --font-size: 62.5%;
 }
-
-* {
+*{
     box-sizing: border-box;
     font-family: var(--primary-font-family);
     margin: 0;
