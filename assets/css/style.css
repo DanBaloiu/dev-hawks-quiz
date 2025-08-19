@@ -153,6 +153,29 @@ h3 {
     transform: translateY(-0.1rem);
     transition: transform 150ms;
 }
+<<<<<<< HEAD
+/* HUD */
+#hud {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.hud-prefix {
+    text-align: center;
+}
+
+.hud-main-text {
+  text-align: center;
+=======
+
+.correct {
+    background-color: #28a745;
+}
+
+.incorrect {
+    background-color: #dc3545;
+}
 
 
 /* results page */
@@ -175,4 +198,5 @@ h3 {
 
 #results input::placeholder {
   color: var(--primary-color);
+>>>>>>> main
 }
