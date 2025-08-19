@@ -1,11 +1,11 @@
 const username = document.getElementById('username');
-const submitScoreBtn = document.getElementById('submitScoreBtn');
-const finalScore = document.getElementById('quizScore');
+const saveScoreBtn = document.getElementById('saveScoreBtn');
+const finalScore = document.getElementById('finalScore');
 const mostRecentScore = localStorage.getItem('mostRecentScore');
-finalScore.innerText = mostRecenztScore;
+finalScore.innerText = mostRecentScore;
 
 username.addEventListener('keyup', () => {
-    submitScoreBtn.disabled = !username.value;
+    saveScoreBtn.disabled = !username.value;
 });
 
 saveHighScore = (e) => {

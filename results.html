@@ -11,8 +11,8 @@
 </head>
  <body>
     <div class="container">
-      <div id="results" class="flex-center flex-column">
-        <h1 id="quizScore">Congrats!</h1>
+      <div id="end" class="flex-center flex-column">
+        <h1 id="finalScore"></h1>
         <form>
           <input
             type="text"
@@ -23,15 +23,15 @@
           <button
             type="submit"
             class="btn"
-            id="submitScoreBtn"
+            id="saveScoreBtn"
             onclick="saveHighScore(event)"
             disabled
           >
             Save
           </button>
         </form>
-        <a class="btn" href="">Play Again</a>
-        <a class="btn" href="/index.html">Back to Home</a>
+        <a class="btn" href="/">Play Again</a>
+        <a class="btn" href="/index.html">Go Home</a>
       </div>
     </div>
     <script src="assets/javascript/script.js"></script>
