@@ -153,21 +153,23 @@ h3 {
     transform: translateY(-0.1rem);
     transition: transform 150ms;
 }
-<<<<<<< HEAD
-/* HUD */
+/* Heads Up Display */
+
 #hud {
     display: flex;
-    justify-content: space-around;
-    
+    justify-content: space-between;
+
 }
+ 
 
 .hud-prefix {
-    text-align: center;
+  text-align: center;
+  font-size: 2rem;
 }
 
 .hud-main-text {
-  text-align: center;
-=======
+    text-align: center;
+}
 
 
 /* results page */
@@ -190,5 +192,4 @@ h3 {
 
 #results input::placeholder {
   color: var(--primary-color);
->>>>>>> main
 }
