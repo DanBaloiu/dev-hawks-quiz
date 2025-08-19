@@ -1,8 +1,7 @@
 // Quiz Question Elements
 const question = document.getElementById("question");
 const choices = Array.from(document.getElementsByClassName("choice-text"));
-console.log(question);
-console.log(choices);
+
 
 let currentQuestion = {};
 let acceptingAnswers = false;
@@ -224,6 +223,7 @@ choices.forEach(choice => {
         const selectedChoice = e.target;
         const selectedAnswer = selectedChoice.dataset["number"];
         console.log(selectedAnswer);
+        
         getNewQuestion();
     });
 });
