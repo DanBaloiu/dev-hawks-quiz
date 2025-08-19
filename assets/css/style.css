@@ -144,3 +144,17 @@ h3{
     transform: translateY(-0.1rem);
     transition: transform 150ms;
 }
+/* HUD */
+#hud {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.hud-prefix {
+    text-align: center;
+}
+
+.hud-main-text {
+  text-align: center;
+}
