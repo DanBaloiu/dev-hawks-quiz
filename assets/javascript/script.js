@@ -13,16 +13,25 @@ let questionCounter = 0;
 let availableQuestions = [];
 
 
+
 let questions = [];
 
-fetch("https://opentdb.com/api.php?amount=10")
+// Utility to decode HTML entities
+function decodeHTMLEntities(text) {
+    const txt = document.createElement('textarea');
+    txt.innerHTML = text;
+    return txt.value;
+}
+
+fetch("https://opentdb.com/api.php?amount=10&type=multiple")
 .then((res) => {
     return res.json();
 })
 .then(loadedQuestions => {
+
     questions = loadedQuestions.results.map(loadedQuestion => {
         const formattedQuestion = {
-            question: loadedQuestion.question,    
+            question: decodeHTMLEntities(loadedQuestion.question),
         };
         const answerChoices = [...loadedQuestion.incorrect_answers];
         formattedQuestion.answer = Math.floor(Math.random() * 4) + 1;
@@ -33,9 +42,8 @@ fetch("https://opentdb.com/api.php?amount=10")
         );
 
         answerChoices.forEach((choice, index) => {
-            formattedQuestion["choice" + (index + 1)] = choice;
+            formattedQuestion["choice" + (index + 1)] = decodeHTMLEntities(choice);
         });
-        
         return formattedQuestion;
     });
 
