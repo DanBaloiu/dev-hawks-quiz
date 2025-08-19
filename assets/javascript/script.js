@@ -11,37 +11,37 @@ let availableQuestions = [];
 // General Knowledge Questions
 // remove to set question category then comment out "let questions" 
 let questions = [
-    { question: "Who sang the title song for the latest Bond film, No Time to Die?", choice1: "Adele", choice2: "Sam Smith", choice3: "Billie Eilish", choice4: "Lana Del Rey", answer: "Billie Eilish" },
-    { question: "Which flies a green, white, and orange (in that order) tricolor flag?", choice1: "Ireland", choice2: "Ivory Coast", choice3: "Italy", choice4: "India", answer: "Ireland" },
-    { question: "What company makes the Xperia model of smartphone?", choice1: "Samsung", choice2: "Sony", choice3: "Nokia", choice4: "Apple", answer: "Sony" },
-    { question: "Which city is home to the Brandenburg Gate?", choice1: "Vienna", choice2: "Zurich", choice3: "Berlin", choice4: "Munich", answer: "Berlin" },
-    { question: "Which of the following is NOT a fruit?", choice1: "Rhubarb", choice2: "Tomatoes", choice3: "Avocados", choice4: "Bananas", answer: "Rhubarb" },
-    { question: "Where was the first example of paper money used?", choice1: "China", choice2: "Turkey", choice3: "Greece", choice4: "Rome", answer: "China" },
-    { question: "Who is generally considered the inventor of the motor car?", choice1: "Henry Ford", choice2: "Karl Benz", choice3: "Henry M. Leland", choice4: "Giovanni Agnelli", answer: "Karl Benz" },
-    { question: "If you were looking at Iguazu Falls, on what continent would you be?", choice1: "Asia", choice2: "Africa", choice3: "South America", choice4: "North America", answer: "South America" },
-    { question: "What number was the Apollo mission that successfully put a man on the moon for the first time in human history?", choice1: "Apollo 11", choice2: "Apollo 12", choice3: "Apollo 13", choice4: "Apollo 14", answer: "Apollo 11" },
-    { question: "Which of the following languages has the longest alphabet?", choice1: "Greek", choice2: "Russian", choice3: "English", choice4: "Arabic", answer: "Russian" },
-    { question: "Who was the lead singer of the band The Who?", choice1: "Roger Daltrey", choice2: "Don Henley", choice3: "Robert Plant", choice4: "Mick Jagger", answer: "Roger Daltrey" },
-    { question: "What spirit is used in making a Tom Collins?", choice1: "Vodka", choice2: "Rum", choice3: "Gin", choice4: "Tequila", answer: "Gin" },
-    { question: "The fear of insects is known as what?", choice1: "Entomophobia", choice2: "Arachnophobia", choice3: "Ailurophobia", choice4: "Ophidiophobia", answer: "Entomophobia" },
-    { question: "What was the name of the Franco-British supersonic commercial plane that operated from 1976-2003?", choice1: "Accord", choice2: "Concorde", choice3: "Mirage", choice4: "Boeing", answer: "Concorde" },
-    { question: "What was the name of the Franco-British supersonic commercial plane that operated from 1976-2003?", choice1: "Accord", choice2: "Concorde", choice3: "Mirage", choice4: "Boeing", answer: "Concorde" },
-    { question: "Which horoscope sign is a fish?", choice1: "Aquarius", choice2: "Cancer", choice3: "Pisces", choice4: "Scorpio", answer: "Pisces" },
-    { question: "What is the largest US state (by landmass)?", choice1: "Texas", choice2: "Alaska", choice3: "California", choice4: "Florida", answer: "Alaska" },
-    { question: "Which app has the most total users?", choice1: "TikTok", choice2: "Snapchat", choice3: "Instagram", choice4: "Facebook", answer: "Instagram" },
-    { question: "Which Game of Thrones character is known as the Young Wolf?", choice1: "Robb Stark", choice2: "Arya Stark", choice3: "Sansa Stark", choice4: "Jon Snow", answer: "Robb Stark" },
-    { question: "What city hosted the 2002 Olympic Games?", choice1: "Tokyo", choice2: "Beijing", choice3: "Sydney", choice4: "Athens", answer: "Sydney" },
-    { question: "How many plays do people (generally) believe that Shakespeare wrote?", choice1: "27", choice2: "37", choice3: "47", choice4: "57", answer: "37" },
-    { question: "Which of the following was considered one of the Seven Ancient Wonders?", choice1: "Colosseum", choice2: "Great Wall of China", choice3: "Colossus of Rhodes", choice4: "Machu Picchu", answer: "Colossus of Rhodes" },
-    { question: "Who directed the Academy Award-winning movie, Gladiator?", choice1: "Ridley Scott", choice2: "James Cameron", choice3: "Steven Soderbergh", choice4: "Peter Jackson", answer: "Ridley Scott" },
-    { question: "How long did dinosaurs live on the earth?", choice1: "100-150 million years", choice2: "150-200 million years", choice3: "200+ million years", choice4: "350+ million years", answer: "150-200 million years" },
-    { question: "What Italian city is famous for its system of canals?", choice1: "Rome", choice2: "Naples", choice3: "Venice", choice4: "Milan", answer: "Venice" },
-    { question: "What is the strongest muscle in the human body?", choice1: "Jaw", choice2: "Heart", choice3: "Glutes", choice4: "Biceps", answer: "Jaw" },
-    { question: "What is the longest-running Broadway show ever?", choice1: "Les Miserable", choice2: "The Lion King", choice3: "The Phantom of the Opera", choice4: "Chicago", answer: "The Phantom of the Opera" },
-    { question: "Where was tea invented?", choice1: "England", choice2: "USA", choice3: "China", choice4: "India", answer: "China" },
-    { question: "Where was the earliest documented case of the Spanish flu?", choice1: "USA", choice2: "Spain", choice3: "Mexico", choice4: "China", answer: "USA" },
-    { question: "Which of the following languages is NOT driven from Latin?", choice1: "French", choice2: "Portuguese", choice3: "English", choice4: "German", answer: "English" },
-    { question: "Arnold Schwarzenegger was married to a member of what famous US political family?", choice1: "The Kennedys", choice2: "The Bushes", choice3: "The Rockefellers", choice4: "The Clintons", answer: "The Kennedys" },
+    { question: "Who sang the title song for the latest Bond film, No Time to Die?", choice1: "Adele", choice2: "Sam Smith", choice3: "Billie Eilish", choice4: "Lana Del Rey", answer: 3 },
+    { question: "Which flies a green, white, and orange (in that order) tricolor flag?", choice1: "Ireland", choice2: "Ivory Coast", choice3: "Italy", choice4: "India", answer: 1 },
+    { question: "What company makes the Xperia model of smartphone?", choice1: "Samsung", choice2: "Sony", choice3: "Nokia", choice4: "Apple", answer: 2 },
+    { question: "Which city is home to the Brandenburg Gate?", choice1: "Vienna", choice2: "Zurich", choice3: "Berlin", choice4: "Munich", answer: 3 },
+    { question: "Which of the following is NOT a fruit?", choice1: "Rhubarb", choice2: "Tomatoes", choice3: "Avocados", choice4: "Bananas", answer: 1 },
+    { question: "Where was the first example of paper money used?", choice1: "China", choice2: "Turkey", choice3: "Greece", choice4: "Rome", answer: 1 },
+    { question: "Who is generally considered the inventor of the motor car?", choice1: "Henry Ford", choice2: "Karl Benz", choice3: "Henry M. Leland", choice4: "Giovanni Agnelli", answer: 2 },
+    { question: "If you were looking at Iguazu Falls, on what continent would you be?", choice1: "Asia", choice2: "Africa", choice3: "South America", choice4: "North America", answer: 3 },
+    { question: "What number was the Apollo mission that successfully put a man on the moon for the first time in human history?", choice1: "Apollo 11", choice2: "Apollo 12", choice3: "Apollo 13", choice4: "Apollo 14", answer: 1 },
+    { question: "Which of the following languages has the longest alphabet?", choice1: "Greek", choice2: "Russian", choice3: "English", choice4: "Arabic", answer: 2 },
+    { question: "Who was the lead singer of the band The Who?", choice1: "Roger Daltrey", choice2: "Don Henley", choice3: "Robert Plant", choice4: "Mick Jagger", answer: 1 },
+    { question: "What spirit is used in making a Tom Collins?", choice1: "Vodka", choice2: "Rum", choice3: "Gin", choice4: "Tequila", answer: 3 },
+    { question: "The fear of insects is known as what?", choice1: "Entomophobia", choice2: "Arachnophobia", choice3: "Ailurophobia", choice4: "Ophidiophobia", answer: 1 },
+    { question: "What was the name of the Franco-British supersonic commercial plane that operated from 1976-2003?", choice1: "Accord", choice2: "Concorde", choice3: "Mirage", choice4: "Boeing", answer: 2 },
+    { question: "What was the name of the Franco-British supersonic commercial plane that operated from 1976-2003?", choice1: "Accord", choice2: "Concorde", choice3: "Mirage", choice4: "Boeing", answer: 2 },
+    { question: "Which horoscope sign is a fish?", choice1: "Aquarius", choice2: "Cancer", choice3: "Pisces", choice4: "Scorpio", answer: 3 },
+    { question: "What is the largest US state (by landmass)?", choice1: "Texas", choice2: "Alaska", choice3: "California", choice4: "Florida", answer: 2 },
+    { question: "Which app has the most total users?", choice1: "TikTok", choice2: "Snapchat", choice3: "Instagram", choice4: "Facebook", answer: 3 },
+    { question: "Which Game of Thrones character is known as the Young Wolf?", choice1: "Robb Stark", choice2: "Arya Stark", choice3: "Sansa Stark", choice4: "Jon Snow", answer: 1 },
+    { question: "What city hosted the 2002 Olympic Games?", choice1: "Tokyo", choice2: "Beijing", choice3: "Sydney", choice4: "Athens", answer: 3 },
+    { question: "How many plays do people (generally) believe that Shakespeare wrote?", choice1: "27", choice2: "37", choice3: "47", choice4: "57", answer: 2 },
+    { question: "Which of the following was considered one of the Seven Ancient Wonders?", choice1: "Colosseum", choice2: "Great Wall of China", choice3: "Colossus of Rhodes", choice4: "Machu Picchu", answer: 3 },
+    { question: "Who directed the Academy Award-winning movie, Gladiator?", choice1: "Ridley Scott", choice2: "James Cameron", choice3: "Steven Soderbergh", choice4: "Peter Jackson", answer: 1 },
+    { question: "How long did dinosaurs live on the earth?", choice1: "100-150 million years", choice2: "150-200 million years", choice3: "200+ million years", choice4: "350+ million years", answer: 2 },
+    { question: "What Italian city is famous for its system of canals?", choice1: "Rome", choice2: "Naples", choice3: "Venice", choice4: "Milan", answer: 3 },
+    { question: "What is the strongest muscle in the human body?", choice1: "Jaw", choice2: "Heart", choice3: "Glutes", choice4: "Biceps", answer: 1 },
+    { question: "What is the longest-running Broadway show ever?", choice1: "Les Miserable", choice2: "The Lion King", choice3: "The Phantom of the Opera", choice4: "Chicago", answer: 3 },
+    { question: "Where was tea invented?", choice1: "England", choice2: "USA", choice3: "China", choice4: "India", answer: 3 },
+    { question: "Where was the earliest documented case of the Spanish flu?", choice1: "USA", choice2: "Spain", choice3: "Mexico", choice4: "China", answer: 1 },
+    { question: "Which of the following languages is NOT driven from Latin?", choice1: "French", choice2: "Portuguese", choice3: "English", choice4: "German", answer: 3 },
+    { question: "Arnold Schwarzenegger was married to a member of what famous US political family?", choice1: "The Kennedys", choice2: "The Bushes", choice3: "The Rockefellers", choice4: "The Clintons", answer: 1 },
 // remove to set question category and remove "," from the end of the last question in the array above];
 
 // Sport Questions
@@ -222,7 +222,7 @@ choices.forEach(choice => {
         acceptingAnswers = false;
         const selectedChoice = e.target;
         const selectedAnswer = selectedChoice.dataset["number"];
-        console.log(selectedAnswer);
+        console.log(selectedAnswer === currentQuestion.answer);
         
         getNewQuestion();
     });
