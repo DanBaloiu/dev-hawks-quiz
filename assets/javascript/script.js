@@ -16,6 +16,15 @@ let score = 0;
 
 let questions = [];
 
+
+// Utility to decode HTML entities
+    function decodeHTMLEntities(text) {
+        // Converts HTML entities to readable text (e.g., &quot; -> ")
+        const txt = document.createElement('textarea');
+        txt.innerHTML = text;
+        return txt.value;
+    }
+
 fetch("https://opentdb.com/api.php?amount=10&type=multiple")
 .then((res) => {
     return res.json();
@@ -23,7 +32,7 @@ fetch("https://opentdb.com/api.php?amount=10&type=multiple")
 .then(loadedQuestions => {
     questions = loadedQuestions.results.map(loadedQuestion => {
         const formattedQuestion = {
-            question: loadedQuestion.question,    
+             question: decodeHTMLEntities(loadedQuestion.question),   
         };
         const answerChoices = [...loadedQuestion.incorrect_answers];
         formattedQuestion.answer = Math.floor(Math.random() * 4) + 1;
@@ -34,7 +43,7 @@ fetch("https://opentdb.com/api.php?amount=10&type=multiple")
         );
 
         answerChoices.forEach((choice, index) => {
-            formattedQuestion["choice" + (index + 1)] = choice;
+            formattedQuestion["choice" + (index + 1)] = decodeHTMLEntities(choice);
         });
         
         return formattedQuestion;
@@ -68,11 +77,11 @@ getNewQuestion = () => {
     questionCounter++;
     const questionIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionIndex];
-    question.innerText = currentQuestion.question;
+    question.innerText = decodeHTMLEntities(currentQuestion.question);
 
     choices.forEach(choice => {
         const number = choice.dataset["number"];
-        choice.innerText = currentQuestion["choice" + number];
+        choice.innerText = decodeHTMLEntities(currentQuestion["choice" + number]);
     });
     availableQuestions.splice(questionIndex, 1);
 
