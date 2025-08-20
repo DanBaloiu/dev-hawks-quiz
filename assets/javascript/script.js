@@ -3,6 +3,15 @@ const progressText = document.getElementById("progressText");
 const scoreCount = document.getElementById("score");
 const progressBarFull = document.getElementById("progressBarFull");
 
+// logo image element
+const img = document.createElement('img');
+// sets image source
+img.src = '../assets/images/qh-logo.png' ;
+img.alt = 'Quiz Hawks Logo';
+// link to container
+document.getElementById('logo-container').appendChild(img);
+
+
 // Quiz Question Elements
 const question = document.getElementById("question");
 const choices = Array.from(document.getElementsByClassName("choice-text"));
