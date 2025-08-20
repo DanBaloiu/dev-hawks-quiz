@@ -39,7 +39,7 @@ const progressBarFull = document.getElementById("progressBarFull");
 // logo image element
 const img = document.createElement('img');
 // sets image source
-img.src = '../assets/images/qh-logo.png';
+img.src = '../assets/images/qh-logo.png' ;
 img.alt = 'Quiz Hawks Logo';
 // link to container
 document.getElementById('logo-container').appendChild(img);
