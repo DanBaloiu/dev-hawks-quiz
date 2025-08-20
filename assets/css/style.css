@@ -168,6 +168,17 @@ h3 {
     justify-content: space-between;
 
 }
+
+/* Ensure question is always below HUD */
+#game {
+    display: flex;
+    flex-direction: column;
+}
+
+#question {
+    margin-top: 2rem;
+    word-break: break-word;
+}
  
 
 .hud-prefix {
@@ -178,8 +189,6 @@ h3 {
 .hud-main-text {
   text-align: center;
 }
-
-
 
 
 /* results page */
