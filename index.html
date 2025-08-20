@@ -14,14 +14,31 @@
   <link rel="manifest" href="assets/images/site.webmanifest">
   <link rel="shortcut icon" href="assets/images/favicon.ico">
   <title>Dev Hawks Quiz - Play</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet" />
+      <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 <div class="container">
+          <div id="logo-container"></div>
     <div id="home" class="flex-center flex-column">
         <h1>Quiz Hawks</h1>
+        <label for="categorySelect">Choose a category:</label>
+                        <select id="categorySelect">
+                            <option value="">Any Category</option>
+                        </select>
+                        <label for="form-select">Choose a difficulty:</label>
+                        <select class="form-select" id="difficultySelect">
+                            <option value="">Any Difficulty</option>
+                            <option value="easy">Easy</option>
+                            <option value="medium">Medium</option>
+                            <option value="hard">Hard</option>
+                        </select>
             <a class="btn" href="quiz.html">Start Quiz</a>
             <a class="btn" href="highscores.html">View Highscores</a>
     </div>
 </div>
+<script src="assets/javascript/script.js"></script>
 </body>
 </html>
