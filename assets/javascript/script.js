@@ -109,9 +109,17 @@ choices.forEach(choice => {
         acceptingAnswers = false;
         const selectedChoice = e.target;
         const selectedAnswer = selectedChoice.dataset["number"];
+
         // check if the correct answer was selected
-        const classToApply = selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";
+        const isCorrect = selectedAnswer == currentQuestion.answer;
+        const classToApply = isCorrect ? "correct" : "incorrect";
         selectedChoice.parentElement.classList.add(classToApply);
+
+        // Increment score and update display if correct
+        if (isCorrect) {
+            score += CORRECT_BONUS;
+            scoreCount.innerText = score;
+        }
 
         // Always show the correct answer
         choices.forEach(choice => {
