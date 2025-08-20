@@ -1,6 +1,8 @@
 
 const questionCounterCount = document.getElementById("questionCounter");
 const scoreCount = document.getElementById("score");
+const loader = document.getElementById("loader");
+const game =  document.getElementById("game")
 
 // Quiz Question Elements
 const question = document.getElementById("question");
@@ -53,8 +55,13 @@ startGame = () => {
     questionCounter = 0;
     score = 0;
     availableQuestions = [...questions];
-   
-    getNewQuestion();
+    loader.classList.remove("hidden");
+    game.classList.add("hidden");
+    setTimeout(() => {
+        loader.classList.add("hidden");
+        game.classList.remove("hidden");
+        getNewQuestion();
+    }, 2000);
 };
 
 
