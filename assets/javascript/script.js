@@ -1,23 +1,24 @@
-<<<<<<< HEAD
+document.addEventListener("DOMContentLoaded", () => {
+
+//constants
+const CORRECT_BONUS = 10;
+const MAX_QUESTIONS = 5;
+let currentQuestion = {};
+let acceptingAnswers = false;
+let questionCounter = 0;
+let availableQuestions = [];
+
 // Heads Up Display Elements
 const questionCounterCount = document.getElementById("questionCounter");
 const scoreCount = document.getElementById("score");
     questionCounterCount.innerText = `${questionCounter} / ${MAX_QUESTIONS}`;
-=======
-
-const questionCounterCount = document.getElementById("questionCounter");
-const scoreCount = document.getElementById("score");
->>>>>>> main
 
 // Quiz Question Elements
 const question = document.getElementById("question");
 const choices = Array.from(document.getElementsByClassName("choice-text"));
 
 
-let currentQuestion = {};
-let acceptingAnswers = false;
-let questionCounter = 0;
-let availableQuestions = [];
+
 
 
 
@@ -77,9 +78,7 @@ function loadQuestions(callback) {
                 });
         });
 }
-//constants
-const CORRECT_BONUS = 10;
-const MAX_QUESTIONS = 5;
+
 
 
 startGame = () => {
@@ -95,11 +94,12 @@ loadQuestions(startGame);
 
 getNewQuestion = () => {
     if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
-            localStorage.setItem("mostRecentScore", score);
+        localStorage.setItem("mostRecentScore", score);
         //go to the results page
         return window.location.assign("results.html");
     }
     questionCounter++;
+    questionCounterCount.innerText = `${questionCounter} / ${MAX_QUESTIONS}`;
     const questionIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionIndex];
     // Always decode before display (extra safety)
@@ -123,15 +123,12 @@ choices.forEach(choice => {
         const selectedAnswer = selectedChoice.dataset["number"];
         // check if the correct answer was selected
         const classToApply = selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";
-<<<<<<< HEAD
         
             // Increment Scoring call
         if(classToApply === "correct") {
             incrementScore(CORRECT_BONUS);
         }
         
-=======
->>>>>>> main
         selectedChoice.parentElement.classList.add(classToApply);
 
         // Always show the correct answer
@@ -139,11 +136,8 @@ choices.forEach(choice => {
             if (choice.dataset["number"] == currentQuestion.answer) {
                 choice.parentElement.classList.add("correct");
             }
-<<<<<<< HEAD
 
         
-=======
->>>>>>> main
         });
 
         // Set timeout to remove classes and get new question
@@ -159,9 +153,8 @@ choices.forEach(choice => {
     });
 });
 
-<<<<<<< HEAD
 // Increments Scoring
 incrementScore = Number => { score += Number; 
     scoreCount.innerText = score; }
-=======
->>>>>>> main
+
+});
