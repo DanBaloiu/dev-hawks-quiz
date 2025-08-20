@@ -11,11 +11,12 @@ let currentQuestion = {};
 let acceptingAnswers = false;
 let questionCounter = 0;
 let availableQuestions = [];
+let score = 0;
 
 
 let questions = [];
 
-fetch("https://opentdb.com/api.php?amount=10")
+fetch("https://opentdb.com/api.php?amount=10&type=multiple")
 .then((res) => {
     return res.json();
 })
