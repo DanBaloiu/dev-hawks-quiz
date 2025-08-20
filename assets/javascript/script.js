@@ -1,6 +1,7 @@
 
-const questionCounterCount = document.getElementById("questionCounter");
+const progressText = document.getElementById("progressText");
 const scoreCount = document.getElementById("score");
+const progressBarFull = document.getElementById("progressBarFull");
 
 // Quiz Question Elements
 const question = document.getElementById("question");
@@ -75,8 +76,10 @@ getNewQuestion = () => {
         return window.location.assign("results.html");
     }
     questionCounter++;
-    // Update the question counter display
-    questionCounterCount.innerText = `${questionCounter}/${MAX_QUESTIONS}`;
+    progressText.innerText = `Question ${questionCounter} / ${MAX_QUESTIONS}`;
+// Update the progress bar
+    progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`;
+    
     const questionIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionIndex];
     question.innerText = decodeHTMLEntities(currentQuestion.question);
