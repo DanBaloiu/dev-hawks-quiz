@@ -248,4 +248,17 @@ h3 {
     100% {
         transform: rotate(360deg);
     }
+
+ /* Progress Bar styling */
+#progressBar {
+    width: 20rem ;
+    height: 4rem;
+    border: 0.3rem solid var(--text-color);
+    
+}
+
+#progressBarFull {
+    height: 3.4rem;
+    background-color: var(--primary-color);
+    transition: width 0%;
 }
