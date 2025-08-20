@@ -9,7 +9,6 @@
     --highlight-color: #67aaf9;
     --primary-font-family: 'Atma', sans-serif;
     --secondary-font-family: 'Nunito Sans', sans-serif;
-    --font-size: 62.5%;
 }
 *{
     box-sizing: border-box;
@@ -66,15 +65,15 @@ p {
     margin-bottom: 1rem;
     text-decoration: none;
     color: var(--primary-color);
-    background-color: var(--secondary-color);
-    box-shadow: 0 0 0.5rem var(--primary-color);
+    background-color: var(--primary-text-color);
 }
 
 .btn:hover {
     cursor: pointer;
     transform: translateY(-0.1rem);
     transition: transform 150ms;
-    box-shadow: none;
+    background-color: var(--highlight-color);
+    color: var(--primary-text-color)
 }
 
 .btn[disabled]:hover {
@@ -91,7 +90,7 @@ body {
 
 .container {
     width: 75%;
-    height: 100dvh; /* fills the entire viewport height */
+    height: 100vh; /* fills the entire viewport height */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -276,4 +275,8 @@ body {
 .high-score:hover {
   transform: scale(1.025);
 }
+
+/* media queries */
+
+
 
