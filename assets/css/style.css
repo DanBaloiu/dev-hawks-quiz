@@ -111,7 +111,6 @@ body {
   left: 50%;
   transform: translateX(-50%);
   z-index: 1000; /* ensures it stays above other elements */
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 #logo-container img {
@@ -140,6 +139,18 @@ body {
 
 .hidden {
     display: none;
+}
+
+
+ /* index page */
+
+.home-logo {
+  text-align: center;
+  position: absolute;
+  top: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000; /* ensures it stays above other elements */
 }
 
 
@@ -275,6 +286,32 @@ body {
 .high-score:hover {
   transform: scale(1.025);
 }
+
+/* 404 error page */
+#error {
+  position: absolute;
+  top: 20rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000; /* ensures it stays above other elements */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  height: auto;
+}
+
+.error {
+    background-color: var(--primary-color);
+    color: var(--primary-text-color);
+    text-align: center;
+    margin-top: 4rem;
+    font-size: 1.8rem;
+}
+
+.error h1 {
+ color: var(--primary-text-color);
+ text-align: center;
+}
+
 
 /* media queries */
 
