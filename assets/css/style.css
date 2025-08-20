@@ -91,7 +91,7 @@ body {
 
 .container {
     width: 75%;
-    height: 100vh; /* fills the entire viewport height */
+    height: 100dvh; /* fills the entire viewport height */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -181,6 +181,11 @@ body {
     transition: transform 150ms;
     color: var(--primary-color);
 }
+
+.choice-prefix {
+    color: var(--highlight-color);
+}
+
 .correct {
     background-color: #28a745;
 }
@@ -271,3 +276,4 @@ body {
 .high-score:hover {
   transform: scale(1.025);
 }
+
