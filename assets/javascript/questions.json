@@ -28,7 +28,7 @@
     { "question": "Where was tea invented?", "choice1": "England", "choice2": "USA", "choice3": "China", "choice4": "India", "answer": 3 },
     { "question": "Where was the earliest documented case of the Spanish flu?", "choice1": "USA", "choice2": "Spain", "choice3": "Mexico", "choice4": "China", "answer": 1 },
     { "question": "Which of the following languages is NOT driven from Latin?", "choice1": "French", "choice2": "Portuguese", "choice3": "English", "choice4": "German", "answer": 3 },
-    { "question": "Arnold Schwarzenegger was married to a member of what famous US political family?", "choice1": "The Kennedys", "choice2": "The Bushes", "choice3": "The Rockefellers", "choice4": "The Clintons", "answer": 1 }
+    { "question": "Arnold Schwarzenegger was married to a member of what famous US political family?", "choice1": "The Kennedys", "choice2": "The Bushes", "choice3": "The Rockefellers", "choice4": "The Clintons", "answer": 1 },
     { "question": "Which country won the FIFA World Cup in 2018?", "choice1": "Brazil", "choice2": "Germany", "choice3": "France", "choice4": "Argentina", "answer": 3 },
     { "question": "Who holds the record for the most Grand Slam tennis titles?", "choice1": "Roger Federer", "choice2": "Rafael Nadal", "choice3": "Novak Djokovic", "choice4": "Pete Sampras", "answer": 3 },
     { "question": "In which sport would you perform a slam dunk?", "choice1": "Basketball", "choice2": "Volleyball", "choice3": "Football", "choice4": "Baseball", "answer": 1 },
