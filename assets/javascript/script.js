@@ -122,3 +122,9 @@ incrementScore = (num) => {
     score += num;
     scoreText.innerText = score;
 };
+
+document.querySelectorAll('.choice-text').forEach(choice => {
+  choice.addEventListener('click', () => {
+    choice.classList.add('clicked');
+  });
+});
