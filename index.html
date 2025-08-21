@@ -10,47 +10,52 @@
     href="https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/style.css">
-  <!-- Favicon links -->
+
+  <!-- Icons / Manifest -->
   <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.webp">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.webp">
   <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.webp">
   <link rel="manifest" href="assets/images/site.webmanifest">
   <link rel="shortcut icon" href="assets/images/favicon.ico">
+
   <title>Quiz Hawks - Home</title>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
-        rel="stylesheet" />
-      <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-<div class="container">
-  <div id="logo-container" class="home-logo">
-      <img src="assets/images/qh-logo.webp" alt="Quiz Hawks Logo">
-    </div>
-  <div class="flex-center flex-column">
-    <div id="home" class="flex-center flex-column">
+  <div class="container">
+    <div class="flex-center flex-column">
+      <div id="logo-container" class="home-logo">
+        <img src="assets/images/qh-logo.webp" alt="Quiz Hawks logo">
+      </div>
+
+      <div id="home" class="flex-center flex-column">
         <h1>Quiz Hawks</h1>
+
         <label class="select-option" for="categorySelect">Choose a category:</label>
-                        <select id="categorySelect">
-                            <option value="">Any Category</option>
-                        </select>
-            <label class="select-option" for="form-select">Choose a difficulty:</label>
-            <select class="form-select" id="difficultySelect">
-              <option value="">Any Difficulty</option>
-              <option value="easy">Easy</option>
-              <option value="medium">Medium</option>
-              <option value="hard">Hard</option>
-            </select>
-            <label class="select-option" for="maxQuestionsSelect">Number of questions:</label>
-            <select id="maxQuestionsSelect">
-              <option value="3">3</option>
-              <option value="5" selected>5</option>
-              <option value="10">10</option>
-            </select>
-            <a class="btn" href="quiz.html" id="start-btn">Start Quiz</a>
-            <a class="btn" href="highscores.html">View Highscores</a>
-    </div>
-</div>
-<script src="assets/javascript/index.js"></script>
+        <select id="categorySelect" name="category">
+          <option value="">Any Category</option>
+        </select>
+
+        <label class="select-option" for="difficultySelect">Choose a difficulty:</label>
+        <select class="form-select" id="difficultySelect" name="difficulty">
+          <option value="">Any Difficulty</option>
+          <option value="easy">Easy</option>
+          <option value="medium">Medium</option>
+          <option value="hard">Hard</option>
+        </select>
+
+        <label class="select-option" for="maxQuestionsSelect">Number of questions:</label>
+        <select id="maxQuestionsSelect" name="maxQuestions">
+          <option value="3">3</option>
+          <option value="5" selected>5</option>
+          <option value="10">10</option>
+        </select>
+
+        <a class="btn" href="quiz.html" id="start-btn">Start Quiz</a>
+        <a class="btn" href="highscores.html">View Highscores</a>
+      </div> <!-- /#home -->
+    </div> <!-- /.flex-center -->
+  </div> <!-- /.container -->
+
+  <script src="assets/javascript/index.js"></script>
 </body>
 </html>
