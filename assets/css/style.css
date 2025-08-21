@@ -325,19 +325,32 @@ select, .select-option {
 }
 
 /* highscores */
+
 #highScoresList {
   list-style: none;
   padding-left: 0;
   margin-bottom: 4rem;
+  font-size: 1.8rem;
+  text-align: center;
 }
 
-.high-score {
+.high-scores {
   font-size: 2.8rem;
   margin-bottom: 0.5rem;
+  text-align: center;
 }
 
-.high-score:hover {
+.high-scores:hover {
   transform: scale(1.025);
+}
+
+#finalScore {
+    text-align: center;
+}
+
+.home-btn {
+    display: block;
+    margin: 20px auto;
 }
 
 /* 404 error page */
