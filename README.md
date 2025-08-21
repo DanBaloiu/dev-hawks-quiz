@@ -86,14 +86,14 @@ The quiz layout was designed with **simplicity and clarity** in mind.
 - Results page summarising outcomes.  
 
 ### Wireframes  
-![Wireframe-Desktop1](assets/images/wireframe1.png)
-![Wireframe-Desktop2](assets/images/wireframe2.png)
-![Wireframe-Desktop3](assets/images/wireframe3.png)
+![Wireframe-Desktop1](assets/images/wireframe1.webp)
+![Wireframe-Desktop2](assets/images/wireframe2.webp)
+![Wireframe-Desktop3](assets/images/wireframe3.webp)
 
 ### Colour Palette  
 We used a consistent and accessible colour palette to ensure clarity and good contrast across devices.  
 
-![Quiz Hawks Colour Palette](assets/images/color-palette.png)  
+![Quiz Hawks Colour Palette](assets/images/color-palette.webp)  
 
 **Hex codes:**  
 - `#F4DBD8` (Light Pink)  
@@ -106,10 +106,10 @@ We used a consistent and accessible colour palette to ensure clarity and good co
 ## Screenshots  
 
 ### Homepage / Quiz Screen  
-![Quiz Screenshot](assets/images/screenshot1.png) 
+![Quiz Screenshot](assets/images/screenshot1.webp) 
 
 ### Results Page  
-![Results Screenshot](assets/images/screenshot2.png)
+![Results Screenshot](assets/images/screenshot2.webp)
 
 ---
 
