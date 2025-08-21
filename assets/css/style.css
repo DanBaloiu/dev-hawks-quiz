@@ -43,15 +43,12 @@
 }
 
 
-h1,
-h2,
-h3,
-h4 {
-    margin-bottom: 1rem;
-}
+/* LOGO CONTAINER */
 
+   
+
+/* If you want to style the h1 after the logo, use a separate rule */
 h1 {
-    font-size: 3rem;
     color: var(--secondary-text-color);
     margin-bottom: 5rem;
 }
@@ -127,20 +124,22 @@ body {
 
 .container>* {
     width: 100%;
-}
-
+    text-align: center;
+    /* Removed absolute positioning to keep logo in normal flow */
 #logo-container {
-  position: absolute;
-  top: 3rem;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1000; /* ensures it stays above other elements */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
 }
 
 #logo-container img {
     width: 150px;
     height: auto;
-    margin-bottom: 2rem; /* Add margin below logo for spacing */
+    
+   margin-bottom: 2rem;
+   margin-top: 2rem;
 }
 
 
@@ -178,13 +177,8 @@ body {
     margin: 3rem;
 }
 
-.home-logo {
-  text-align: center;
-  position: absolute;
-  top: 3rem;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1000; /* ensures it stays above other elements */
+
+
 }
 
 select, .form-select {
@@ -230,6 +224,7 @@ select, .select-option {
     padding: 1.5rem;
     font-family: var(--secondary-font-family);
     width: 100%;
+    text-align: left;
 }
 
 .choice-text:hover:not(.clicked) {
