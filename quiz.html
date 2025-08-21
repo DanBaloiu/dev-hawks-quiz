@@ -2,68 +2,70 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
-        rel="stylesheet" />
-    <link rel="stylesheet" href="assets/css/style.css">
-    <!-- Favicon links -->
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
-  <link rel="manifest" href="assets/images/site.webmanifest">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Favicon links -->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.webp">
+  <link rel="icon" type="image/webp" sizes="32x32" href="assets/images/favicon-32x32.webp">
+  <link rel="icon" type="image/webp" sizes="16x16" href="assets/images/favicon-16x16.webp">
   <link rel="shortcut icon" href="assets/images/favicon.ico">
     <title>Dev Hawks - Play</title>
 </head>
+
 <body>
 <!-- main body of the quiz -->
 <div class="container">
-  <!-- Quiz Game -->
-  <!-- Quiz Game -->
-  <div id="game" class="justify-center flex-column">
-    <!-- Heads Up Display -->
-    <div id="hud" style="position:relative;">
-      <div id="loader"></div>
-      <div id="hud-item">
-        <p id ="progressText"class="hud-prefix">
-          Question
-        </p>
-        <div id="progress-bar">
-          <div id="progressBarFull"></div>
+  <div class="flex-center flex-column">
+    <div id="logo-container" class="home-logo">
+      <img src="assets/images/qh-logo.webp" alt="Quiz Hawks Logo">
+    </div>
+    <h1>Quiz Hawks</h1>
+    <div id="game" class="justify-center flex-column">
+      <!-- Heads Up Display -->
+      <div id="hud" style="position:relative;">
+        <div id="loader"></div>
+        <div id="hud-item">
+          <p id ="progressText"class="hud-prefix">
+            Question
+          </p>
+          <div id="progress-bar">
+            <div id="progressBarFull"></div>
+          </div>
         </div>
-        
+        <div id="hud-item">
+          <p class="hud-prefix">
+            Score
+          </p>
+          <h1 class="hud-main-text" id="score">
+            0
+          </h1>
+        </div>
       </div>
-      <div id="hud-item">
-        <p class="hud-prefix">
-          Score
-        </p>
-        <h1 class="hud-main-text" id="score">
-          0
-        </h1>
+      <p id="categoryDisplay" class="hud-prefix"></p>
+      <div class="question-wrapper">
+        <h2 class="text-center" id="question"></h2>
       </div>
-    </div>
-  <div id="logo-container"></div>
-  <p id="categoryDisplay" class="hud-prefix"></p>
-  <div class="question-wrapper">
-    <h2 class="text-center" id="question"></h2>
-  </div>
-    <!-- Question Choices -->
-    <div class="choice-container">
-      <p class="choice-prefix">A</p>
-      <p class="choice-text" data-number="1"></p>
-    </div>
-    <div class="choice-container">
-      <p class="choice-prefix">B</p>
-      <p class="choice-text" data-number="2"></p>
-    </div>
-    <div class="choice-container">
-      <p class="choice-prefix">C</p>
-      <p class="choice-text"  data-number="3"></p>
-    </div>
-    <div class="choice-container" >
-      <p class="choice-prefix">D</p>
-      <p class="choice-text" data-number="4"></p>
+      <!-- Question Choices -->
+      <div class="choice-container">
+        <p class="choice-prefix">A</p>
+        <p class="choice-text" data-number="1"></p>
+      </div>
+      <div class="choice-container">
+        <p class="choice-prefix">B</p>
+        <p class="choice-text" data-number="2"></p>
+      </div>
+      <div class="choice-container">
+        <p class="choice-prefix">C</p>
+        <p class="choice-text"  data-number="3"></p>
+      </div>
+      <div class="choice-container" >
+        <p class="choice-prefix">D</p>
+        <p class="choice-text" data-number="4"></p>
+      </div>
     </div>
   </div>
 </div>
