@@ -320,7 +320,8 @@ select, .select-option {
 }
 
 #results  input::placeholder {
-  color: var(--primary-color);
+    color: var(--primary-color);
+    opacity: 1;
 }
 
 #username {
@@ -338,7 +339,9 @@ select, .select-option {
   font-size: 1.8rem;
   text-align: center;
 }
-
+.visually-hidden {
+    display: none;
+}
 .high-scores {
   font-size: 2.8rem;
   margin-bottom: 0.5rem;
@@ -351,6 +354,11 @@ select, .select-option {
 
 #finalScore {
     text-align: center;
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: var(--secondary-text-color);
+    margin-bottom: 2rem;
 }
 
 .home-btn {
