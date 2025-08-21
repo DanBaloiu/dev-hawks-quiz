@@ -6,6 +6,7 @@ It allows players to test their knowledge, receive instant feedback, and track t
 👉 Live Site: [Quiz Hawks Deployed Link](https://danbaloiu.github.io/dev-hawks-quiz/)  
 👉 Repository: [GitHub Repo](https://github.com/DanBaloiu/dev-hawks-quiz)  
 
+![Am I Responsive](assets/images/responsive-mockup.webp)
 ---
 
 ## Table of Contents  
@@ -75,6 +76,7 @@ The project focuses on:
 
 📌 For full details on acceptance criteria and tasks, see our [Project Board](https://github.com/users/DanBaloiu/projects/6)  
 
+![Project Board](assets/images/project-board-updated.webp)
 
 ---
 
@@ -107,9 +109,10 @@ We used a consistent and accessible colour palette to ensure clarity and good co
 
 ### Homepage / Quiz Screen  
 ![Quiz Screenshot](assets/images/screenshot1.webp) 
-
+![Quiz Screenshot](assets/images/screenshot2.webp)
+![Quiz Screenshot](assets/images/screenshot3.webp)  
 ### Results Page  
-![Results Screenshot](assets/images/screenshot2.webp)
+![Results Screenshot](assets/images/screenshot4.webp)
 
 ---
 
@@ -144,6 +147,12 @@ CSS code passed validation without any changes needed:
 ![Firefox testing](assets/images/firefox-screenshot.webp)
 ![Edge testing](assets/images/edge-screenshot.webp)
 - ✅ Mobile responsiveness tested on multiple screen sizes  
+- ✅ Lighthouse results 
+Lighthouse Mobile results:
+![Lighthouse mobile results](assets/images/lighthouse-report.webp)
+Lighthouse Desktop results:
+![Lighthouse desktop results](assets/images/lighthouse-desktop.webp)
+
 
 ---
 
