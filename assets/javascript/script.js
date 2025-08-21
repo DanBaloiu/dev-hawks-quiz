@@ -13,9 +13,11 @@ let questionCounter = 0;
 let availableQuestions = [];
 
 let questions = [];
+
+const maxQuestions = localStorage.getItem('maxQuestions') || '10';
 const selectedDifficulty = localStorage.getItem('selectedDifficulty') || 'easy';
 const selectedCategory = localStorage.getItem('selectedCategory') || '9'; // default to 9
-const apiUrl = `https://opentdb.com/api.php?amount=10&category=${selectedCategory}&difficulty=${selectedDifficulty}&type=multiple`;
+const apiUrl = `https://opentdb.com/api.php?amount=${maxQuestions}&category=${selectedCategory}&difficulty=${selectedDifficulty}&type=multiple`;
 
 fetch(apiUrl)
   .then((res) => res.json())
@@ -48,7 +50,7 @@ fetch(apiUrl)
 
 //CONSTANTS
 const CORRECT_BONUS = 10;
-const MAX_QUESTIONS = 5;
+const MAX_QUESTIONS = parseInt(maxQuestions, 10);
 
 startGame = () => {
     questionCounter = 0;
