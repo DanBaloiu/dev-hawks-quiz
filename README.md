@@ -116,6 +116,10 @@ We used a consistent and accessible colour palette to ensure clarity and good co
 ## Validation & Testing  
 
 - ✅ HTML validated with [W3C Validator](https://validator.w3.org/)  
+Index html validation before
+![Index html validation before](assets/images/index-html-validation.webp) 
+Index html validation after
+![Index html validation after](assets/images/index-html-validator-ok.webp) 
 - ✅ CSS validated with [Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/)  
 - ✅ JavaScript linted using ESLint – no major issues  
 - ✅ Tested responsiveness across Chrome, Firefox, Safari, and Edge  
