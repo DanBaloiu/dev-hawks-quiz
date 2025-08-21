@@ -88,6 +88,9 @@ The quiz layout was designed with **simplicity and clarity** in mind.
 - Results page summarising outcomes.  
 
 ### Wireframes  
+Mobile:
+![Wireframe-Mobile](assets/images/mobile_wireframe.png)
+Desktop: 
 ![Wireframe-Desktop1](assets/images/wireframe1.webp)
 ![Wireframe-Desktop2](assets/images/wireframe2.webp)
 ![Wireframe-Desktop3](assets/images/wireframe3.webp)
