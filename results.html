@@ -1,52 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
-    rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
   <link rel="stylesheet" href="assets/css/style.css">
-  <!-- Favicon links -->
+
+  <!-- Favicons / Manifest -->
   <link rel="manifest" href="assets/images/site.webmanifest">
   <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.webp">
   <link rel="icon" type="image/webp" sizes="32x32" href="assets/images/favicon-32x32.webp">
   <link rel="icon" type="image/webp" sizes="16x16" href="assets/images/favicon-16x16.webp">
   <link rel="shortcut icon" href="assets/images/favicon.webp">
+
   <title>Results!</title>
 </head>
- <body>
-    <div class="container">
-      <div class="flex-center flex-column">
-        <div id="logo-container" class="home-logo">
-          <img src="assets/images/qh-logo.webp" alt="Quiz Hawks Logo">
-        </div>
-        <h1>Quiz Hawks</h1>
-        <div id="results" class="flex-center flex-column">
-        <h1 id="finalScore"></h1>
+<body>
+  <div class="container">
+    <div class="flex-center flex-column">
+      <div id="logo-container" class="home-logo">
+        <img src="assets/images/qh-logo.webp" alt="Quiz Hawks Logo">
+      </div>
+
+      <h1>Quiz Hawks</h1>
+
+      <div id="results" class="flex-center flex-column">
+        <!-- Use a non-empty, live-updated container instead of an empty heading -->
+        <div id="finalScore" role="heading" aria-level="1" aria-live="polite"></div>
+
         <form>
           <h2>Congrats on completing the quiz!</h2>
-          <h2 id="enter-name">Enter your name to save your highscore..</h2>
-          <input
-            type="text"
-            name="username"
-            id="username"
-            placeholder="Your Name"
-          />
-          <button
-            type="submit"
-            class="btn"
-            id="saveScoreBtn"
-            onclick="saveHighScore(event)"
-            disabled
-          >
+          <h2 id="enter-name">Enter your name to save your high score.</h2>
+
+          <label for="username" class="visually-hidden">Your Name</label>
+          <input type="text" name="username" id="username" placeholder="Your Name">
+
+          <button type="submit" class="btn" id="saveScoreBtn" onclick="saveHighScore(event)" disabled>
             Save Score
           </button>
         </form>
+
         <a class="btn" href="quiz.html">Play Again</a>
         <a class="btn" href="index.html">Back to Home</a>
-      </div>
-    </div>
-    <script src="assets/javascript/results.js"></script>
-  </body>
+      </div> <!-- /#results -->
+    </div> <!-- /.flex-center -->
+  </div> <!-- /.container -->
+
+  <script src="assets/javascript/results.js"></script>
+</body>
 </html>

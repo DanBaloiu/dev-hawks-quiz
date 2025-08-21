@@ -124,9 +124,25 @@ Quiz html validation before:
 ![quiz.html validation after](assets/images/quiz-html-validator-errors.webp)
 Quiz html validation after:
 ![quiz.html validation after](assets/images/quiz-html-validator-clean.webp)
+Results html validation before:
+![results.html validation after](assets/images/results-validator-errors.webp)
+Results html validation after:
+![results.html validation before](assets/images/results-validator-clean.webp)
+Highscores html validation(No changes needed):
+![highscore.html validation](assets/images/highscore-validator-clean.webp)
+404 page html validation before:
+![404.html validation befopre](assets/images/404-validator-errors.webp)
+404 page html validation after:
+![404.html validation after](assets/images/404-validator-clean.webp)
 - ✅ CSS validated with [Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/)  
+CSS code passed validation without any changes needed:
+![CSS validation](assets/images/css-validator-clean.webp)
 - ✅ JavaScript linted using ESLint – no major issues  
 - ✅ Tested responsiveness across Chrome, Firefox, Safari, and Edge  
+![Safari testing](assets/images/safari-screenshot.webp)
+![Chrome testing](assets/images/chrome-screenshot.webp)
+![Firefox testing](assets/images/firefox-screenshot.webp)
+![Edge testing](assets/images/edge-screenshot.webp)
 - ✅ Mobile responsiveness tested on multiple screen sizes  
 
 ---
