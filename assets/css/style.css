@@ -138,8 +138,9 @@ body {
 }
 
 #logo-container img {
-  width: 150px;
-  height: auto;
+    width: 150px;
+    height: auto;
+    margin-bottom: 2rem; /* Add margin below logo for spacing */
 }
 
 
@@ -412,7 +413,8 @@ select, .select-option {
         font-size: 2rem;
     }
     #logo-container img {
-        width: 120px;
+    width: 120px;
+    margin-bottom: 1.5rem;
     }
 }
 
@@ -430,7 +432,8 @@ select, .select-option {
         margin-bottom: 2rem;
     }
     #logo-container img {
-        width: 90px;
+    width: 90px;
+    margin-bottom: 1.2rem;
     }
     .choice-container {
         font-size: 1.2rem;
@@ -462,9 +465,9 @@ select, .select-option {
         text-align: center;
     }
     #logo-container img {
-        width: 60px;
-        display: block;
-        margin: 0 auto;
+    width: 60px;
+    display: block;
+    margin: 0 auto 1rem auto;
     }
     h1 {
         font-size: 2rem;
