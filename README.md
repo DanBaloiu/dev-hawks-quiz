@@ -93,7 +93,7 @@ The quiz layout was designed with **simplicity and clarity** in mind.
 ### Colour Palette  
 We used a consistent and accessible colour palette to ensure clarity and good contrast across devices.  
 
-![Quiz Hawks Colour Palette](assets/images/color-palette.webp)  
+![Quiz Hawks Colour Palette](assets/images/color-palette.webp) 
 
 **Hex codes:**  
 - `#F4DBD8` (Light Pink)  
@@ -101,6 +101,12 @@ We used a consistent and accessible colour palette to ensure clarity and good co
 - `#E980FC` (Bright Pink)  
 - `#B96AC9` (Purple)  
 - `#2B2D42` (Dark Navy) 
+
+### Google Fonts
+We chose Atma for its playful elegance and Nunito Sans for its clean readability—together they create a visually engaging and user-friendly experience that complements the spirit of our quiz app. We used Google Fonts to seamlessly integrate beautiful, high-performance typography—ensuring our quiz looks great across devices with minimal effort.
+
+![Quiz Hawks Font Choice](assets/images/fonts.webp) 
+
 ---
 
 ## Screenshots  
