@@ -1,3 +1,27 @@
+.question-wrapper {
+    position: relative;
+    width: 100%;
+    min-height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#question {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    pointer-events: none;
+}
 /* css variables */
 
 
@@ -140,7 +164,12 @@ body {
 .hidden {
     display: none;
 }
-
+#hud {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 8rem;
+}
 
  /* index page */
 
@@ -216,7 +245,7 @@ body {
 #progressBarFull {
   height: 100%;
   width: 0%; /* updated dynamically via JS */
-  background-color: var(--highlight-color); 
+  background-color: var(--secondary-color); 
   transition: width 0.3s ease;
 }
 
@@ -312,7 +341,24 @@ body {
  text-align: center;
 }
 
+#loader {
+    border: 1.6rem solid white;
+    border-radius: 50%;
+    border-top: 1.6rem solid var(--secondary-color);
+    width: 12rem;
+    height: 12rem;
+    animation: spin 2s linear infinite;
+}
 
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    
+}
 /* media queries */
 
 
