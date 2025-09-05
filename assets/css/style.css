@@ -119,7 +119,7 @@ body {
 
 .container {
     width: 75%;
-    height: 100vh; /* fills the entire viewport height */
+    /* height: 100vh; fills the entire viewport height */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -129,6 +129,7 @@ body {
     padding: 2rem;
     background-color: var(--primary-color);
     box-sizing: border-box; /* ensures padding doesn't overflow */
+    padding-bottom: 25px;
 }
 
 .container>* {
